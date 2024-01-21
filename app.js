@@ -111,7 +111,7 @@ app.get('/marketing', (req, res) => {
         </header>
         <h1>Personal de Developers</h1>
             <div>Se dispone de ${users.length} integrantes en el area de developers<div>
-            <ul>${users.map(user => `<li>${user.name}, ${user. age} años</li>`)}</ul>
+            <ul>${users.map(user => `<li>${user.name}, ${user. age} años</li>`).join()}</ul>
             <nav>
                 <div>Accesos a otras áreas:</div>
                 <ul>
